@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body h1{
+            color: palevioletred;
+        }
+        .form{
+            border: 2px solid black;
+            margin: 2rem 9rem;
+            width: 60vw;
+            /* height: 40vh; */
+        }
+    </style>
+</head>
+<body>
+    <h1>ADMIN PANEL</h1>
+    <form class="form">
+        <label for="Cname">Category:</label><br>
+        <select  id="Cname" name="Cname" placeholder="enter category">
+            <option value="All">All</option>
+            <option value="Cakes">Cakes</option>
+            <option value="Cupcakes">Cupcakes</option>
+            <option value="Sweet">Sweet</option>
+            <option value="Doughnuts">Doughnuts</option>
+        </select><br><br>
+
+        <label for="ItemName">Item name:</label><br>
+        <input type="text" id="ItemName" name="ItemName" placeholder="enter item name"><br><br>
+
+        <label for="Price">Price:</label><br>
+        <input type="text" id="Price" name="Price" placeholder="enter price"><br><br>
+
+        <label for="image">Image:</label><br>
+        <input type="file" id="image" name="image"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+<script src="form.js"></script>
